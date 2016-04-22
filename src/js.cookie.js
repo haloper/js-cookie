@@ -133,7 +133,7 @@
 
 			for (; i < cookies.length; i++) {
 				var parts = cookies[i].split('=');
-				//name uri decoding (1바이트 문자열만 처리)
+				//name uri decoding (디코딩이 필요한 문자열만 처리)
 				var name = parts[0].replace(rdecode, decodeURIComponent); 
 				
 				//value 값에 "=" 기호가 포함되어 본의아니게 쪼개진 경우 다시 합침
